@@ -148,6 +148,7 @@ class nginx (
   Boolean $manage_snippets_dir                               = true,
   $types_hash_bucket_size                                    = '512',
   $types_hash_max_size                                       = '1024',
+  $expires                                                   = '0',
   Integer $worker_connections                                = 1024,
   Enum['on', 'off'] $ssl_prefer_server_ciphers               = 'on',
   Variant[Integer, Enum['auto']] $worker_processes           = 'auto',

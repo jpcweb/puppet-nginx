@@ -591,6 +591,12 @@ describe 'nginx' do
                 match: %r{\s*use\s+eventport;}
               },
               {
+                title: 'should set expires',
+                attr: 'expires',
+                value: 0,
+                match: '  expires 0;'
+              },
+              {
                 title: 'should set access_log',
                 attr: 'http_access_log',
                 value: '/path/to/access.log',

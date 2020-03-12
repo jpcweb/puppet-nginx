@@ -104,7 +104,7 @@ http {
   <%- end -%>
 <% end -%>
   server_tokens <%= @server_tokens %>;
-
+  expires <%= @expires %>;
   types_hash_max_size <%= @types_hash_max_size %>;
   types_hash_bucket_size <%= @types_hash_bucket_size %>;
 
